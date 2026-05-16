@@ -1,185 +1,311 @@
 <!DOCTYPE html>
-<html>
-
-<!-- Head -->
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
-    <title>Your Name Here</title>
+    <title>Erica Millan</title>
     <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
 </head>
 
-<!-- Body -->
-
 <body class="Background">
 
-    <!-- Navbar -->
-    <div class="Navbar">
-        <a class="active" href="#Home">Home</a>
-        <!-- New section added -->
-        <a href="#Slideshow">Slideshow</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <!-- Onclick and ondblclick functions added to open and close the contact form -->
-        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#FeaturedProjects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#GitHub">GitHub</a></li>
+       <li><a href="javascript:void(0)" onclick="openForm()">Contact</a></li>
+
+    </ul>
+</nav>
+
+<section class="top-wrapper">
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="images/video/abstract.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+
+<!-- HOME / HERO -->
+<section id="Home" class="hero">
+    <div class="hero-content">
+
+        <h1>Erica Millan</h1>
+        <h2>Full‑Stack Developer & IT Professional</h2>
+
+        <p class="hero-intro">
+        Endlessly curious, always uncovering how systems interact, break, and 
+        rebuild. I love building simple, modern, and reliable software that 
+        works seamlessly and feels effortless.
+        </p>
+
+        <!-- ICON LINKS -->
+        <div class="hero-links">
+
+            <a href="https://github.com/erica-millan" class="hero-link" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/erica-millan/" class="hero-link" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="">
+                LinkedIn
+            </a>
+
+            <a href="Erica-Millan-Resume-2026.pdf" class="hero-link" target="_blank" download>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm8 2H4v2h16v-2z" fill="currentColor"/>
+    </svg>
+    Resume
+</a>
+
+
+            <a href="mailto:ericamillan1234@gmail.com" class="hero-link">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 
+                             0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6v12h16V6l-8 5z"
+                          fill="currentColor"/>
+                </svg>
+                Email
+            </a>
+
+        </div>
+
     </div>
+</section>
 
-    <!-- Background video -->
-    <div id="Home">
-        <video autoplay muted loop id="Typing_Video">
-            <source src="images/video/Typing.mp4" type="video/mp4">
-            <!-- Display message if video fails to run -->
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="video-tint"></div>
-    </div>
 
-    <!-- Video text -->
-    <div class="Video_Text">
-        <h1 class="white-text">Hi, I'm Erica</h1>
-        <strong>
-            <p class="center">
-                <q class="rose-text">You might not think that programmers are artists, <br>but programming is an
-                    extremely creative profession. <br>It’s logic-based creativity.
-                </q>
-                <br> -John Romero
-                <br>
-                <br>
-                <br> Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                <br>
-                <br> Thank you for stopping by and enjoy!
-            </p>
-        </strong>
-    </div>
+<!-- SKILLS -->
+ <section class="skills-wrapper">
+    <div class="skills-section">
 
-    <!-- Slideshow section added -->
-    <div id="Slideshow">
-        <div id="Slideshow_Background">
-            <div id="Slideshow_Container">
-                <!-- Slide 1 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="images/me.png" alt="Picture of me">
-                    <div class="text">I'm available to assist you on your project!</div>
-                </div>
-                <!-- Slide 2 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg"
-                        alt="HTML, CSS, and JS logos">
-                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,
-                    </div>
-                </div>
-                <!-- Slide 3 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
-                    <div class="text">the popular programming language Python,</div>
-                </div>
-                <!-- Slide 4 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
-                    <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
-                </div>
-                <!-- Slide 5 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo">
-                    <div class="text">back end development, databases and SQL.</div>
-                </div>
-                <!-- Slide 6 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="images/django.png" alt="SQL logo">
-                    <div class="text">back end development, databases and SQL.</div>
-                </div>
-                <!-- Slide 6 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="images/desktop.png" alt="desktop">
-                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
-                </div>
-                <!-- Previous and next buttons -->
-                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br> <!-- Adds a space between the slideshow images and the dots -->
+        <div class="skill-box">
+            <h3>Frontend Development</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Bootstrap</li>
+                <li>UI/UX Principles</li>
+                <li>Tkinter (Python UI)</li>
+            </ul>
+        </div>
 
-            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-            <div style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-            </div>
+        <div class="skill-box">
+            <h3>Backend Development</h3>
+            <ul>
+                <li>C#, ASP.NET MVC</li>
+                <li>Entity Framework</li>
+                <li>Python & Django</li>
+                <li>SQL Server & SQLite</li>
+                <li>Docker</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>System Administration</h3>
+            <ul>
+                <li>Windows Server, Active Directory, Group Policy</li>
+                <li>Azure & Azure AD</li>
+                <li>Networking & Firewalls</li>
+                <li>Hyper‑V & Virtualization</li>
+                <li>IT Support & Troubleshooting</li>
+            </ul>
         </div>
     </div>
+</section>
 
-    <!-- About section -->
-    <div class="Row" id="About">
-        <!-- Left column -->
-        <div class="Column_2">
-            <img src="images/binary.png" alt="binary">
-        </div>
-        <!-- Right column -->
-        <div class="Column_1">
-            <h1>About</h1>
-            <p>
-                I’m a software developer with a foundation in IT system administration and IT tech support.
-                <br>
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
-                    Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and
-                programming languages: HTML, CSS, JavaScript, SQL, C#, Pythonand more. I have also worked with Bootstrap, Django, .Net and Tkinter.
-                <br>
-                <br>I am a full-stack developer and would love to work with you on your project. <a
-                    href="#Contact">Contact</a> me below!
-            </p>
-        </div>
+
+</section>
+
+
+
+
+
+<!-- ABOUT -->
+<section id="About" class="about-section">
+  <div class="about-wrapper">
+
+    <img src="images/me.png" alt="Profile Picture" class="about-image">
+
+    <div class="about-content">
+      <h1 class="about-title">Erica Millan</h1>
+      <h3 class="about-subtitle">Full‑Stack Developer & IT Professional</h3>
+
+      <p class="about-text">
+        I’m a full‑stack developer with a strong IT background, working across both software and systems. I like solving complex problems and turning them into simple, reliable solutions. Technology should feel simple, thoughtful, and easy to navigate.
+      </p>
     </div>
 
-    <!-- GitHub section -->
-    <div class="Row" id="GitHub">
-        <!-- Left column -->
-        <div class="Column_1">
-            <h1>GitHub</h1>
-            <p>You can view my coding projects on my GitHub profile here:
-                <br>
-            <p class="center"><a href="https://github.com/erica-millan" target="_blank">Erica Millan Github</a>
-            </p>
-            </p>
-        </div>
-        <!-- Right column -->
-        <div class="Column_2">
-            <a href="https://github.com/erica-millan" target="_blank"><img src="images/GitHub.png"></a>
-        </div>
+  </div>
+</section>
+
+<section id="FeaturedProjects" class="projects-section">
+  <h1 class="projects-title">Featured Projects</h1>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <img src="images/ZELDA_SITE.png" class="project-image">
+      <h3 class="project-title">Characters of Zelda</h3>
+      <p class="project-description">
+        Live project during my time at the Tech Academy, I got to be creative and make my own website. I chose to make a Zelda themed website for character bios.
+      </p>
+      <a href="#" class="project-btn">View Code</a>
     </div>
 
-    <!-- Contact form -->
-    <div id="Contact">
-        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-        <div class="form-popup" id="myForm">
-            <form action="https://formspree.io/f/xqadgorn" method="POST" class="form-container">
-                <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-                <h1>Contact</h1>
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Type your name here" name="name" required>
-                <label for="phone"><b>Phone</b></label>
-                <input type="text" placeholder="Type your phone number here" name="phone">
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Type your email address here" name="email" required>
-                <label for="message"><b>Message</b></label>
-                <input type="text" placeholder="Type your message here" name="message">
-
-                <button type="submit" class="btn">SUBMIT</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-            </form>
-        </div>
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <img src="images/SIMPLE_ANALYTICS.png" class="project-image">
+      <h3 class="project-title">Masters Captone Project</h3>
+      <p class="project-description">
+        Inventory Managment program written in c#. Has an auto replenishing feature.
+      </p>
+      <a href="#" class="project-btn">View Code</a>
     </div>
 
-    <!-- Footer section -->
-    <footer>
-        <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
-                target="_blank">The Tech Academy</a></p><br>
-    </footer>
-    <script src="js/portfolio.js"></script>
-</body>
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <img src="images/academy_cinemas.png" class="project-image">
+      <h3 class="project-title">Academy Cinemas</h3>
+      <p class="project-description">
+        Movie theater website built with Javascript and Django. Has a fully functioning admin panel to manage movies, showtimes and ticket sales.
+      </p>
+      <a href="https://github.com/erica-millan/HTML-AND-CSS-PROJECTS/tree/main/Academy-Cinemas" class="project-btn">View Code</a>
+    </div>
 
-</html>
+    <!-- PROJECT 4 -->
+    <div class="project-card">
+      <img src="images/simple_recipes.png" class="project-image">
+      <h3 class="project-title">Simple Recipes</h3>
+      <p class="project-description">
+       A recipe website written with Javascript and CSS.
+      </p>
+      <a href="#" class="project-btn">View Code</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="Skills" class="skills-grid-section">
+  <h1 class="skills-title">Technical Skills</h1>
+
+<div class="skills-grid-wrapper">
+  <div class="skills-grid">
+
+  <div class="skill-category-header">Frontend Development</div>
+
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><span>HTML</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><span>CSS</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><span>JavaScript</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"><span>Bootstrap</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg"><span>UI/UX</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg"><span>Tkinter</span></div>
+
+  <div class="skill-category-header">Backend Development</div>
+
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"><span>C#</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"><span>ASP.NET</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/databricks.svg"><span>Entity Framework</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><span>Python</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"><span>Django</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"><span>SQL Server</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/sqlite.svg"><span>SQLite</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"><span>Docker</span></div>
+
+  <div class="skill-category-header">System Administration</div>
+
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"><span>Windows</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg"><span>PowerShell</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"><span>Azure</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftazure.svg"><span>Azure AD</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoft.svg"><span>Active Directory</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoft.svg"><span>Group Policy</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg"><span>Windows Server</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cisco.svg"><span>Networking</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnometerminal.svg"><span>System Admin</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bugcrowd.svg"><span>Troubleshooting</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jira.svg"><span>Jira Admin</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/helpdesk.svg"><span>IT Support</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cisco.svg"><span>Network Switches</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/proxmox.svg"><span>Firewalls</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/fortinet.svg"><span>Fortinet</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnometerminal.svg"><span>Hardware Support</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoft.svg"><span>Hyper‑V</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/okta.svg"><span>Access Control</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zendesk.svg"><span>User Support</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dell.svg"><span>Computer Technician</span></div>
+
+  <div class="skill-category-header">Version Control</div>
+
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><span>Git</span></div>
+  <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"><span>GitHub</span></div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- GITHUB -->
+ <section id="GitHub" class="github-section">
+  <h1 class="github-title">GitHub</h1>
+
+  <div class="github-card github-row">
+    
+    <img 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+      alt="GitHub Logo" 
+      class="github-logo"
+    >
+
+    <div class="github-info">
+      <p class="github-text">
+        Check out my projects and contributions on GitHub.
+      </p>
+
+      <a href="https://github.com/erica-millan" class="github-btn">
+        Visit
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT POPUP -->
+<div class="form-popup" id="myForm">
+    <div class="contact-slide-text">Lets Work Together!</div>
+    <div class="contact-card">
+        <h2 class="contact-title">Get in Touch</h2>
+
+        <form action="https://formspree.io/f/xqadgorn" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Phone Number">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="contact-submit">Send Message</button>
+            <button type="button" class="contact-cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+</div>
+
+<!-- FLOATING CONTACT LABEL -->
+<div class="contact-floating-label" onclick="openForm()">CONTACT</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p class="footer-text">
+    Designed by Erica Millan © 2026
+  </p>
+</footer>
+
+<!-- JS FILES -->
+<script src="js/portfolio.js"></script>
