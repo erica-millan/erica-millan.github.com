@@ -29,3 +29,23 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('nav ul');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+
+  //Click out of the hambuer menu to close it
+document.addEventListener('click', (e) => {
+  const nav = document.querySelector('nav ul');
+  const burger = document.querySelector('.hamburger');
+
+  // if click is outside both the menu AND the hamburger
+  if (!nav.contains(e.target) && !burger.contains(e.target)) {
+    nav.classList.remove('active');
+  }
+});
