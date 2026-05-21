@@ -1156,3 +1156,27 @@ ul {
     display: flex;
   }
 }
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.project-tag {
+  background: #1a1a1a;
+  border: 1px solid #6a00ff;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 0 8px rgba(106, 0, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+.project-tag:hover {
+  background: #6a00ff;
+  box-shadow: 0 0 12px rgba(106, 0, 255, 0.8);
+}
